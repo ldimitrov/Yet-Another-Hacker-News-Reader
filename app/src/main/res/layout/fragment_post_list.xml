@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dimitrov.hackernews.hackernewsreader.Views.HNFragment">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightOrange"
+        android:divider="@color/dim_foreground_material_light"
+        android:dividerHeight="4px" />
+
+    <RelativeLayout
+        android:id="@android:id/empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/lightOrange"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!--android:l
+        ayout_width="70dp"
+              android:layout_height="70dp"
+              android:translationZ="2dp"
+              android:layout_centerInParent="true" -->
+        <ProgressBar
+            android:id="@+id/progress_bar"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/progress" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

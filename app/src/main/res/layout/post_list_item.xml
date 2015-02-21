@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Posts.ListItem">
+
+    <TextView
+        android:id="@+id/item_number"
+        style="@style/Posts.ItemNumber"
+        android:text="@string/dummy_index"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        style="@style/Posts.ListItemContent"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/Posts.ItemTitle"
+            android:id="@+id/item_title"
+            android:text="@string/dummy_title"
+            />
+
+        <TextView
+            style="@style/Posts.ItemUrl"
+            android:id="@+id/item_url"
+            android:text="@string/dummy_url" />
+
+        <TextView
+            style="@style/Posts.ItemDetails"
+            android:id="@+id/post_details"
+            android:text="@string/dummy_details"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
