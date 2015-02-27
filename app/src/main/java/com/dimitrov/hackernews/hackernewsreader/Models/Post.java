@@ -11,13 +11,17 @@ public class Post {
     private String url;
     private String prettyUrl;
 
-    public Post(Long id, int index) {
+    public Post(Long id, int number) {
         this.id = id;
-        this.number = index;
+        this.number = number;
     }
 
     public int getNumber() {
         return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public long getId() {
